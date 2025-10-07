@@ -17,10 +17,8 @@ export default function DrivePlayer({
       muted
       loop
       playsInline
-      typeof="video/mp4"
       className="w-full h-full object-cover"
       src={url}
-      controls
       width={width}
       height={height}
     />
