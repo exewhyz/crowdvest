@@ -50,12 +50,11 @@ function Overview() {
                 regional demand drivers.
               </p>
               <p>
-                Currently <strong>over 90% leased</strong> to a robust mix of
-                national and regional tenants—including Giant Eagle, Subway, and
-                Smoker Friendly—the center generates secure and predictable cash
-                flow. This stability is reinforced by primarily{" "}
-                <strong>Triple-Net (NNN) lease structures</strong>, which
-                minimize landlord responsibilities.
+                Are you currently in a 1031 exchange or possibly looking to
+                invest using your IRA? Our properties are fully structured to
+                accommodate both — including 1031-qualified entities and
+                self-directed IRA investments, making the process simple and
+                compliant from start to finish.
               </p>
             </div>
 

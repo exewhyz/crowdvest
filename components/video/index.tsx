@@ -3,7 +3,7 @@ import React from "react";
 function Video() {
   return (
     <iframe
-      src="https://drive.google.com/file/d/1j2iM3QWA3GtEwcIgfLxEzu_EuiqApY18/preview"
+      src="https://storage.googleapis.com/msgsndr/6EVjFir36XAKpcrPyYBf/media/68e51d0579217e124ea0e2ce.mp4"
       className="w-full h-full object-cover"
     ></iframe>
   );

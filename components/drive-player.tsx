@@ -6,10 +6,12 @@ export default function DrivePlayer({
   url,
   width = "100%",
   height = "480px",
+  videoRef,
 }: {
   url: string;
   width?: string;
   height?: string;
+  videoRef?: React.RefObject<HTMLVideoElement> | null;
 }) {
   return (
     <ReactPlayer
@@ -21,6 +23,7 @@ export default function DrivePlayer({
       src={url}
       width={width}
       height={height}
+      ref={videoRef}
     />
   );
 }

@@ -61,7 +61,11 @@ function Testimonials() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
+              transition={{
+                delay: index * 0.1,
+                duration: 1,
+                ease: "easeInOut",
+              }}
               whileHover={{ y: -8 }}
               className="bg-white rounded-3xl p-8 shadow-xl border border-slate-200"
             >

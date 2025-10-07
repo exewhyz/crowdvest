@@ -51,7 +51,7 @@ function Performance() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
+              transition={{ delay: index * 0.1, duration: 1, ease: "easeInOut" }}
               whileHover={{ y: -8, scale: 1.02 }}
               className="bg-white/10 backdrop-blur-lg rounded-3xl p-10 text-center border border-white/20 hover:border-orange-400/50 transition-all"
             >

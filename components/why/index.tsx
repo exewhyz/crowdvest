@@ -55,9 +55,9 @@ const benefits = [
     icon: <BuildingOffice2Icon className="w-8 h-8" />,
   },
   {
-    title: "Streamlined Management",
+    title: "Low CapEx. Streamlined Management",
     description:
-      "With Triple-Net (NNN) leases, tenants cover most operational expenses, minimizing landlord obligations and simplifying property oversight.",
+      "The centers we buy let us collect more income with less upkeep. Most of the heavy lifting roofs, paving, HVAC major CapEx was already completed by the seller years ago. No surprises. No deferred maintenance. No hidden renovation costs.",
     icon: <WrenchScrewdriverIcon className="w-8 h-8" />,
   },
 ];
@@ -101,7 +101,11 @@ function Why() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{
+                delay: index * 0.1,
+                duration: 1,
+                ease: "easeInOut",
+              }}
               whileHover={{ y: -8, scale: 1.02 }}
               className="group bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-white/20 hover:border-orange-400/50 transition-all duration-300"
             >
