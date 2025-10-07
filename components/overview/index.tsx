@@ -55,7 +55,9 @@ function Overview() {
                 <strong>±152,427 SF, 97% leased grocery-anchored center</strong>{" "}
                 with Giant Eagle, Memorial Hospital, and Dollar General.
                 <br />
-                <span className="italic font-semibold">Secure your position - </span>
+                <span className="italic font-semibold">
+                  Secure your position -{" "}
+                </span>
                 <Link href="/#contact">
                   <strong className="text-orange-400">Invest Now</strong>
                   <ArrowDownIcon className="w-4 h-4 inline-block ml-1 animate-bounce" />
@@ -189,10 +191,10 @@ function Overview() {
                 </li>
               </ul>
             </div>
-            <div className="flex justify-center animate-bounce">
-              <InvestNowButton />
-            </div>
           </motion.div>
+        </div>
+        <div className="flex w-full mt-14 justify-center animate-bounce">
+          <InvestNowButton />
         </div>
       </div>
     </section>

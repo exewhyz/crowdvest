@@ -54,9 +54,9 @@ function Hero() {
               </span>
             </Badge>
 
-            <h1 className=" relative text-5xl lg:text-7xl font-bold mb-6 leading-tight text-white">
+            <h1 className=" relative text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight text-white">
               Frontier Plaza
-              <sup className="text-xs align-top border border-white px-2 py-1 rounded-full">
+              <sup className="text-xs align-super border border-white px-1 sm:px-2 py-1 rounded-full">
                 10% Cap
               </sup>
             </h1>
@@ -67,7 +67,7 @@ function Hero() {
               exit strategies, and significant value-add potential.
             </p>
 
-            {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Link href={"https://docdro.id/CvxczdZ"} target="_blank">
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
@@ -96,7 +96,7 @@ function Hero() {
                   Download Financials
                 </motion.button>
               </Link>
-            </div> */}
+            </div>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
