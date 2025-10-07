@@ -11,7 +11,7 @@ import {
   Calendar,
   Play,
 } from "lucide-react";
-import DrivePlayer from "../drive-player";
+// import DrivePlayer from "../drive-player";
 import Video from "../video";
 
 function Hero() {
@@ -137,7 +137,7 @@ function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
                 {/* Play/Pause Button */}
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.1, opacity: 1 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={toggleVideo}
@@ -157,14 +157,14 @@ function Hero() {
                       fill="currentColor"
                     />
                   )}
-                </motion.button>
+                </motion.button> */}
 
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-2xl font-bold text-white">
                       Virtual Property Tour
                     </h3>
-                    <div className="flex items-center gap-2 px-3 py-1 bg-black/50 backdrop-blur rounded-full">
+                    {/* <div className="flex items-center gap-2 px-3 py-1 bg-black/50 backdrop-blur rounded-full">
                       {isVideoPlaying ? (
                         <>
                           <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
@@ -180,7 +180,7 @@ function Hero() {
                           </span>
                         </>
                       )}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

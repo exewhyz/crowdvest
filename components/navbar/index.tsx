@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BuildingOffice2Icon } from "@heroicons/react/24/outline";
 import { Menu, X, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -33,7 +34,14 @@ function Navbar() {
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center gap-3 cursor-pointer"
               >
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-orange-500 rounded-lg flex items-center justify-center">
+                <Image
+                  src="/crowdvest-black.png"
+                  alt="Crowdvest Logo"
+                  width={150}
+                  height={50}
+                  className="object-contain"
+                />
+                {/* <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-orange-500 rounded-lg flex items-center justify-center">
                   <BuildingOffice2Icon className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -43,7 +51,7 @@ function Navbar() {
                   <div className="text-xs text-slate-600">
                     Real Estate Investments
                   </div>
-                </div>
+                </div> */}
               </motion.div>
             </Link>
 
