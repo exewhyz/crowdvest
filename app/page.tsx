@@ -27,11 +27,11 @@ const FrontierPlaza = () => {
       {/* Stats Bar with Background */}
       <Stats />
 
-      {/* Why Invest Section with Background Image */}
-      <Why />
-
       {/* Investment Opportunity Section */}
       <Overview />
+
+      {/* Why Invest Section with Background Image */}
+      <Why />
 
       {/* Property Gallery - Enhanced Bento Grid */}
       <Gallery />
