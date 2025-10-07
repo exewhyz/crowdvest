@@ -5,6 +5,7 @@ import {
   BanknotesIcon,
   BuildingOffice2Icon,
   CircleStackIcon,
+  LifebuoyIcon,
   ScaleIcon,
   ShieldCheckIcon,
   UsersIcon,
@@ -59,6 +60,12 @@ const benefits = [
     description:
       "The centers we buy let us collect more income with less upkeep. Most of the heavy lifting roofs, paving, HVAC major CapEx was already completed by the seller years ago. No surprises. No deferred maintenance. No hidden renovation costs.",
     icon: <WrenchScrewdriverIcon className="w-8 h-8" />,
+  },
+  {
+    title: "Essential, Everyday Stability",
+    description:
+      "Grocery-anchored centers thrive through all market cycles — people always need essentials. This steady demand creates resilient cash flow and long-term stability, even when other sectors slow down.",
+    icon: <LifebuoyIcon className="w-8 h-8" />,
   },
 ];
 

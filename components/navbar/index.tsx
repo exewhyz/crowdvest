@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BuildingOffice2Icon } from "@heroicons/react/24/outline";
 import { Menu, X, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import InvestNowButton from "../invest-now-button";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -80,13 +81,7 @@ function Navbar() {
               >
                 Testimonials
               </Link>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-orange-500 text-white rounded-lg font-semibold shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-all"
-              >
-                <Link href="/#contact">Invest Now</Link>
-              </motion.button>
+              <InvestNowButton />
             </div>
 
             <button

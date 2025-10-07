@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Video from "../video";
 import DrivePlayer from "../drive-player";
+import Badge from "../badge";
 
 function Hero() {
   const [isVideoPlaying, setIsVideoPlaying] = React.useState(true);
@@ -46,20 +47,18 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 border border-orange-400/50 rounded-full mb-6 backdrop-blur-sm"
-            >
+            <Badge>
               <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse" />
               <span className="text-orange-200 text-sm font-semibold">
                 We make our money on the buy
               </span>
-            </motion.div>
+            </Badge>
 
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight text-white">
+            <h1 className=" relative text-5xl lg:text-7xl font-bold mb-6 leading-tight text-white">
               Frontier Plaza
+              <sup className="text-xs align-top border border-white px-2 py-1 rounded-full">
+                10% Cap
+              </sup>
             </h1>
 
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
@@ -68,13 +67,8 @@ function Hero() {
               exit strategies, and significant value-add potential.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Link
-                href={
-                  "https://docdro.id/CvxczdZ"
-                }
-                target="_blank"
-              >
+            {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <Link href={"https://docdro.id/CvxczdZ"} target="_blank">
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
@@ -84,12 +78,7 @@ function Hero() {
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
               </Link>
-              <Link
-                href={
-                  "https://docdro.id/swoottd"
-                }
-                target="_blank"
-              >
+              <Link href={"https://docdro.id/swoottd"} target="_blank">
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
@@ -98,12 +87,7 @@ function Hero() {
                   Download Rent Roll
                 </motion.button>
               </Link>
-              <Link
-                href={
-                  "https://docdro.id/s3irzcB"
-                }
-                target="_blank"
-              >
+              <Link href={"https://docdro.id/s3irzcB"} target="_blank">
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
@@ -112,7 +96,7 @@ function Hero() {
                   Download Financials
                 </motion.button>
               </Link>
-            </div>
+            </div> */}
 
             {/* Quick Stats */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

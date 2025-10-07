@@ -1,6 +1,14 @@
-import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowDownIcon,
+  ArrowRightIcon,
+  CheckCircleIcon,
+  LinkIcon,
+} from "@heroicons/react/24/outline";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import InvestNowButton from "../invest-now-button";
+import { Arrow } from "@radix-ui/react-context-menu";
 
 function Overview() {
   return (
@@ -44,10 +52,14 @@ function Overview() {
             <div className="text-slate-700 leading-relaxed text-lg space-y-4 border-t border-slate-200 pt-6">
               <p>
                 This investment features a{" "}
-                <strong>±52,000-square-foot Giant Eagle–anchored</strong>{" "}
-                shopping center in Marietta, Ohio. Strategically located at 128
-                Gross Street near major highways, it benefits from strong
-                regional demand drivers.
+                <strong>±152,427 SF, 97% leased grocery-anchored center</strong>{" "}
+                with Giant Eagle, Memorial Hospital, and Dollar General.
+                <br />
+                <span className="italic font-semibold">Secure your position - </span>
+                <Link href="/#contact">
+                  <strong className="text-orange-400">Invest Now</strong>
+                  <ArrowDownIcon className="w-4 h-4 inline-block ml-1 animate-bounce" />
+                </Link>
               </p>
               <p>
                 Are you currently in a 1031 exchange or possibly looking to
@@ -98,42 +110,88 @@ function Overview() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:col-span-2 bg-white p-8 rounded-2xl shadow-xl border border-slate-200"
+            className="lg:col-span-2 space-y-6"
           >
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">
-              Offering Highlights
-            </h3>
-            <ul className="space-y-5">
-              <li className="flex items-start gap-4">
-                <div className="w-6 h-6 flex-shrink-0 mt-1 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
-                  <CheckCircleIcon className="w-4 h-4" />
-                </div>
-                <span className="text-slate-700">
-                  <strong>
-                    Giant Eagle anchor with rare profit-sharing lease,
-                  </strong>{" "}
-                  adding revenue and ensuring long-term stability.
-                </span>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="w-6 h-6 flex-shrink-0 mt-1 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
-                  <CheckCircleIcon className="w-4 h-4" />
-                </div>
-                <span className="text-slate-700">
-                  <strong>Four strip buildings on separate parcels</strong>{" "}
-                  allow flexible exit and reduced investment risk.
-                </span>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="w-6 h-6 flex-shrink-0 mt-1 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
-                  <CheckCircleIcon className="w-4 h-4" />
-                </div>
-                <span className="text-slate-700">
-                  <strong>Plan to convert tenants to NNN at renewal,</strong>{" "}
-                  shifting expenses and protecting cash flow.
-                </span>
-              </li>
-            </ul>
+            {/* offering highlights */}
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">
+                Offering Highlights
+              </h3>
+              <ul className="space-y-5">
+                <li className="flex items-start gap-4">
+                  <div className="w-6 h-6 flex-shrink-0 mt-1 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                    <CheckCircleIcon className="w-4 h-4" />
+                  </div>
+                  <span className="text-slate-700">
+                    <strong>
+                      Giant Eagle anchor with rare profit-sharing lease,
+                    </strong>{" "}
+                    adding revenue and ensuring long-term stability.
+                  </span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-6 h-6 flex-shrink-0 mt-1 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                    <CheckCircleIcon className="w-4 h-4" />
+                  </div>
+                  <span className="text-slate-700">
+                    <strong>Four strip buildings on separate parcels</strong>{" "}
+                    allow flexible exit and reduced investment risk.
+                  </span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-6 h-6 flex-shrink-0 mt-1 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                    <CheckCircleIcon className="w-4 h-4" />
+                  </div>
+                  <span className="text-slate-700">
+                    <strong>Plan to convert tenants to NNN at renewal,</strong>{" "}
+                    shifting expenses and protecting cash flow.
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Links */}
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Links</h3>
+              <ul className="space-y-5">
+                <li className="flex items-start gap-4">
+                  <div className="w-6 h-6 flex-shrink-0 mt-1 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                    <LinkIcon className="w-4 h-4" />
+                  </div>
+                  <Link
+                    href="https://docdro.id/CvxczdZ"
+                    className="text-blue-700 underline"
+                  >
+                    Frontier Plaza - Offering Memorandum
+                  </Link>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-6 h-6 flex-shrink-0 mt-1 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                    <LinkIcon className="w-4 h-4" />
+                  </div>
+                  <Link
+                    href="https://docdro.id/swoottd"
+                    className="text-blue-700 underline"
+                  >
+                    Frontier Plaza - Rent Roll
+                  </Link>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-6 h-6 flex-shrink-0 mt-1 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center">
+                    <LinkIcon className="w-4 h-4" />
+                  </div>
+                  <Link
+                    href="https://docdro.id/s3irzcB"
+                    className="text-blue-700 underline"
+                  >
+                    Frontier Plaza - Financials
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="flex justify-center animate-bounce">
+              <InvestNowButton />
+            </div>
           </motion.div>
         </div>
       </div>
