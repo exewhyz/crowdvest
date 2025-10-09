@@ -106,14 +106,14 @@ function Why() {
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{
-                duration: 0.4,
-                delay: index * 0.1,
-                ease: "easeOut",
-              }}
+              // initial={{ opacity: 0, y: 20 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // viewport={{ once: true, margin: "-50px" }}
+              // transition={{
+              //   duration: 0.4,
+              //   delay: index * 0.1,
+              //   ease: "easeOut",
+              // }}
               whileHover={{ y: -8, scale: 1.02 }}
               className="will-change-transform bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-white/20 hover:border-orange-400/50 transition-all duration-300"
             >
