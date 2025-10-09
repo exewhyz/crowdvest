@@ -11,9 +11,9 @@ import {
   Calendar,
   Play,
 } from "lucide-react";
-import Video from "../video";
 import DrivePlayer from "../drive-player";
 import Badge from "../badge";
+import { cn } from "@/lib/utils";
 
 function Hero() {
   const [isVideoPlaying, setIsVideoPlaying] = React.useState(true);
@@ -67,14 +67,14 @@ function Hero() {
               exit strategies, and significant value-add potential.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Link href={"https://docdro.id/CvxczdZ"} target="_blank">
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="cursor-pointer px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold flex items-center gap-2 shadow-xl hover:shadow-2xl transition-all group"
                 >
-                  OM
+                  View OM
                   <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
               </Link>
@@ -82,9 +82,9 @@ function Hero() {
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="cursor-pointer px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-al flex items-center gap-2"
+                  className="cursor-pointer px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2 group"
                 >
-                  Rent Roll
+                  View Rent Roll
                   <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
               </Link>
@@ -94,14 +94,45 @@ function Hero() {
                   whileTap={{ scale: 0.95 }}
                   className="cursor-pointer px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold flex items-center gap-2 shadow-xl hover:shadow-2xl transition-all group"
                 >
-                  Financials
+                  View Financials
                   <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
               </Link>
-            </div>
+            </div> */}
 
+            <div className="grid md:grid-cols-3 gap-2 sm:gap-4 mb-4">
+              {[
+                {
+                  href: "https://docdro.id/CvxczdZ",
+                  label: "View OM",
+                },
+                { href: "https://docdro.id/swoottd", label: "View Rent Roll" },
+                { href: "https://docdro.id/s3irzcB", label: "View Financials" },
+              ].map((link, idx) => (
+                <Link
+                  href={link.href}
+                  target="_blank"
+                  key={idx}
+                  className="flex items-center w-full"
+                >
+                  <motion.button
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                    className={cn(
+                      "w-full cursor-pointer px-4 sm:px-6 py-3 sm:py-4 border-2 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 backdrop-blur text-sm sm:text-sm",
+                      (idx + 1) % 2 === 0
+                        ? "border-white text-white hover:text-blue-600 hover:bg-white/90"
+                        : "bg-white/90 text-blue-600 hover:bg-white"
+                    )}
+                  >
+                    {link.label}
+                    <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </motion.button>
+                </Link>
+              ))}
+            </div>
             {/* Quick Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
                 { value: "26%", label: "Target Investor IRR" },
                 { value: "7.39%", label: "Target Cash on Cash" },
@@ -112,7 +143,7 @@ function Hero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 + idx * 0.1 }}
-                  className="text-center p-4 bg-white/10 backdrop-blur rounded-xl border border-white/20"
+                  className="text-center py-4 px-6 bg-white/10 backdrop-blur rounded-xl border border-white/20"
                 >
                   <div className="text-2xl font-bold text-white">
                     {stat.value}

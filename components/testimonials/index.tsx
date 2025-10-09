@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { StarIcon } from "@heroicons/react/24/outline";
+import { InfiniteMovingCardsDemo } from "./infinite-moving-testimonials";
 
 const testimonials = [
   {
@@ -70,7 +71,7 @@ function Testimonials() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -120,7 +121,8 @@ function Testimonials() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
+        <InfiniteMovingCardsDemo />
       </div>
     </section>
   );
