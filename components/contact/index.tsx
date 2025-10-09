@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
 const NextavestForm = () => {
   useEffect(() => {
@@ -53,8 +55,38 @@ const NextavestForm = () => {
           title="Form 2"
         ></iframe>
       </div>
+      <Disclaimer />
     </motion.div>
   );
 };
 
 export default NextavestForm;
+
+// Disclaimer Section
+export function Disclaimer() {
+  return (
+    <section className="max-w-3xl mx-auto mt-16 mb-8 px-4 text-center">
+      <h3 className="text-sm font-bold mb-2 text-muted text-center">
+        Risk Disclosure
+      </h3>
+      <ul className="list-none pl-6 text-muted space-y-2 text-xs">
+        <li>
+          All investments involve risk, including potential loss of capital,
+          illiquidity, and market fluctuations. Projections are hypothetical and
+          not guaranteed. Please review the full Offering Memorandum and consult
+          your financial advisor before investing.
+        </li>
+        <li className="flex items-center w-full justify-center">
+          <Link
+            href="https://docdro.id/CvxczdZ"
+            target="_blank"
+            className="underline flex justify-center gap-2 hover:text-blue-200"
+          >
+            View Full Risk Factors in the OM
+            <ExternalLink className="w-4 h-4" />
+          </Link>
+        </li>
+      </ul>
+    </section>
+  );
+}

@@ -1,6 +1,5 @@
 "use client";
 
-import NextavestForm from "@/components/contact";
 import Performance from "@/components/performance";
 import Testimonials from "@/components/testimonials";
 import Footer from "@/components/footer";
@@ -12,6 +11,7 @@ import Overview from "@/components/overview";
 import Hero from "@/components/hero";
 import ProgressBar from "@/components/progress-bar";
 import FAQs from "@/components/faqs";
+import ContactWithDisclaimer from "@/components/contact";
 
 const FrontierPlaza = () => {
   return (
@@ -47,7 +47,7 @@ const FrontierPlaza = () => {
       <FAQs />
 
       {/* Contact Section */}
-      <NextavestForm />
+      <ContactWithDisclaimer />
 
       {/* Footer */}
       <Footer />

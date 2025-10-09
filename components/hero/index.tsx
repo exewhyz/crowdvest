@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import {
   Building2,
   TrendingUp,
-  ArrowRight,
+  ExternalLink,
   MapPin,
   Calendar,
   Play,
@@ -74,17 +74,18 @@ function Hero() {
                   whileTap={{ scale: 0.95 }}
                   className="cursor-pointer px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold flex items-center gap-2 shadow-xl hover:shadow-2xl transition-all group"
                 >
-                  Download OM
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  OM
+                  <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
               </Link>
               <Link href={"https://docdro.id/swoottd"} target="_blank">
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="cursor-pointer px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all"
+                  className="cursor-pointer px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-al flex items-center gap-2"
                 >
-                  Download Rent Roll
+                  Rent Roll
+                  <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
               </Link>
               <Link href={"https://docdro.id/s3irzcB"} target="_blank">
@@ -93,7 +94,8 @@ function Hero() {
                   whileTap={{ scale: 0.95 }}
                   className="cursor-pointer px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold flex items-center gap-2 shadow-xl hover:shadow-2xl transition-all group"
                 >
-                  Download Financials
+                  Financials
+                  <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
               </Link>
             </div>
