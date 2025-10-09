@@ -27,6 +27,22 @@ const testimonials = [
       "Crowdvest truly exceeded my expectations. They have an outstanding team of professionals who are knowledgeable, experienced, and genuinely care about their clients' success. I highly recommend them to anyone interested in commercial real estate investing.",
     rating: 5,
   },
+  {
+    name: "James L.",
+    role: "",
+    image: "",
+    content:
+      "I like that they focus on stable, income-producing centers rather than risky projects. The reporting is transparent and I always know how my investment is performing.",
+    rating: 5,
+  },
+  {
+    name: "Alicia Rodriguez",
+    role: "",
+    image: "",
+    content:
+      "I’ve been in several real estate deals, but what stood out here is that the team actually invests alongside us. The communication and quarterly updates have been reliable every time.",
+    rating: 5,
+  },
 ];
 
 function Testimonials() {

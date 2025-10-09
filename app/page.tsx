@@ -11,6 +11,7 @@ import Stats from "@/components/stats";
 import Overview from "@/components/overview";
 import Hero from "@/components/hero";
 import ProgressBar from "@/components/progress-bar";
+import FAQs from "@/components/faqs";
 
 const FrontierPlaza = () => {
   return (
@@ -41,6 +42,9 @@ const FrontierPlaza = () => {
 
       {/* Performance Section */}
       <Performance />
+
+      {/* FAQs Section */}
+      <FAQs />
 
       {/* Contact Section */}
       <NextavestForm />

@@ -1,6 +1,5 @@
 import {
   ArrowDownIcon,
-  ArrowRightIcon,
   CheckCircleIcon,
   LinkIcon,
 } from "@heroicons/react/24/outline";
@@ -8,7 +7,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import InvestNowButton from "../invest-now-button";
-import { Arrow } from "@radix-ui/react-context-menu";
 
 function Overview() {
   return (
@@ -81,25 +79,25 @@ function Overview() {
                 <li className="flex items-start gap-3">
                   <CheckCircleIcon className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                   <span>
-                    The property is uniquely structured with{" "}
-                    <strong>four separate retail strip buildings</strong>,
-                    allowing for multiple, flexible exit strategies.
+                    <strong>97% occupancy rate</strong> with a strong mix of
+                    national, regional, and local tenants providing stable,
+                    diversified income.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircleIcon className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                   <span>
-                    The high-performing anchor has a rare{" "}
-                    <strong>profit-sharing lease</strong>, signaling strong
-                    commitment and providing additional revenue potential.
+                    Located in <strong>high-traffic area</strong> with excellent
+                    visibility and access, surrounded by complementary retail
+                    and healthcare facilities.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircleIcon className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                   <span>
-                    A major tenant has offered to purchase their space for{" "}
-                    <strong>$2.5 million</strong>, validating strong buyer
-                    demand and the property's market value.
+                    <strong>Value-add potential</strong> through strategic
+                    leasing, outparcel development, and conversion of tenants to
+                    NNN leases.
                   </span>
                 </li>
               </ul>

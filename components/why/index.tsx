@@ -83,9 +83,10 @@ function Why() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-white">
@@ -105,18 +106,18 @@ function Why() {
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-50px" }}
               transition={{
+                duration: 0.4,
                 delay: index * 0.1,
-                duration: 1,
-                ease: "easeInOut",
+                ease: "easeOut",
               }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="group bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-white/20 hover:border-orange-400/50 transition-all duration-300"
+              className="will-change-transform bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl border border-white/20 hover:border-orange-400/50 transition-all duration-300"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-orange-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-orange-500/20 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 will-change-transform">
                 <div className="text-orange-400">{benefit.icon}</div>
               </div>
 

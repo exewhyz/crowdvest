@@ -55,7 +55,9 @@ export const BentoGridItem = ({
         <img
           src={img}
           alt={typeof title === "string" ? title : "bento-grid-image"}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
+          className={cn(
+            "w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
+          )}
         />
       )}
 
@@ -64,7 +66,9 @@ export const BentoGridItem = ({
 
       {/* Content */}
       <div className="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <h3 className="text-white text-2xl lg:text-3xl font-bold mb-2">{title}</h3>
+        <h3 className="text-white text-2xl lg:text-3xl font-bold mb-2">
+          {title}
+        </h3>
         <pre className="text-neutral-200 text-sm">{description}</pre>
       </div>
 

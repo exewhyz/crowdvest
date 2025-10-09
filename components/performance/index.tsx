@@ -48,12 +48,16 @@ function Performance() {
           ].map((stat, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 1, ease: "easeInOut" }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ 
+                duration: 0.4,
+                delay: index * 0.1,
+                ease: "easeOut"
+              }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="bg-white/10 backdrop-blur-lg rounded-3xl p-10 text-center border border-white/20 hover:border-orange-400/50 transition-all"
+              className="will-change-transform bg-white/10 backdrop-blur-lg rounded-3xl p-10 text-center border border-white/20 hover:border-orange-400/50 transition-all duration-300"
             >
               <div className="text-slate-300 text-sm font-semibold uppercase tracking-wider mb-4">
                 {stat.metric}

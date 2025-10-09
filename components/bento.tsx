@@ -48,7 +48,7 @@ const items = [
     title: "Memorial Hospital",
     description:
       "GLA: 8,425 SF (5.53%)\nRevenue: ~$82,874 annually (8.54%)\nRent PSF: $9.84\nTerm Remaining: One 5-Year Option",
-    img: "https://storage.googleapis.com/msgsndr/6EVjFir36XAKpcrPyYBf/media/68e3f12b6a0a916f8f84a798.png",
+    img: "/dollar.jpeg",
     // tag: "Growth Potential",
     className: "md:col-span-2",
   },
