@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
-import Script from "next/script";
+import LinkedInInsight from "@/components/linkedin-insight";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,26 +38,7 @@ export default function RootLayout({
         </ThemeProvider>
 
         {/* LinkedIn Insight Tag */}
-        <Script id="linkedin-insight" strategy="afterInteractive">
-          {`
-            _linkedin_partner_id = "8144052";
-            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-          `}
-        </Script>
-        <Script
-          src="https://snap.licdn.com/li.lms-analytics/insight.min.js"
-          strategy="afterInteractive"
-        />
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            alt=""
-            src="https://px.ads.linkedin.com/collect/?pid=8144052&fmt=gif"
-          />
-        </noscript>
+        <LinkedInInsight/>
       </body>
     </html>
   );
