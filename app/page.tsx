@@ -12,6 +12,7 @@ import Hero from "@/components/hero";
 import ProgressBar from "@/components/progress-bar";
 import FAQs from "@/components/faqs";
 import ContactWithDisclaimer from "@/components/contact";
+import CardFlip from "@/components/gallery/flip-card";
 
 const FrontierPlaza = () => {
   return (

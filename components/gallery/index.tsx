@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { BentoGridSecondDemo } from "../bento";
+import CardFlip from "./flip-card";
+import { items } from "../bento"; // Import items from bento.tsx
 
 function Gallery() {
   return (
@@ -24,8 +25,25 @@ function Gallery() {
           </p>
         </motion.div>
 
-        {/* Large Image Grid */}
-        <BentoGridSecondDemo />
+        <div className="grid md:grid-cols-3 gap-8">
+          {items.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className={item.className}
+            >
+              <CardFlip
+                title={item.title}
+                description={item.description}
+                img={item.img}
+                className="h-full"
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

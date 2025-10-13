@@ -19,7 +19,7 @@ export function BentoGridSecondDemo() {
   );
 }
 
-const items = [
+export const items = [
   {
     title: "Giant Eagle Anchor",
     description:
